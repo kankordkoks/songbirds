@@ -1,0 +1,15 @@
+@import url(./css/normalize.css);
+@import url(./css/header.css);
+@import url(./css/footer.css);
+
+body{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Bungee Spice';
+}
+
+main{
+  flex-grow: 1;
+}
