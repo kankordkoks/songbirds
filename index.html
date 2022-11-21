@@ -8,10 +8,9 @@
 	<link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Roboto:wght@100;400;700&display=swap"
-		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./style.css">
-	<title>SongBirdsQuiz</title>
+	<title>SongBirds</title>
 </head>
 
 <body>
@@ -20,13 +19,60 @@
 			<div class="logo"></div>
 			<span class="logo-title">SongBirdsQuiz</span>
 		</div>
-		<div class="header-score">
-			<span class="score">Score: </span>
-			<span class="score result"></span>
+		<div class="header-btn-block">
+			<span class="score">Score : </span>
+			<span class="score-res">0</span>
+			<span class="return-play">Play</span>
 		</div>
-		<nav></nav>
+
 	</header>
-	<main></main>
+	<main>
+		<div class="main-block">
+			<div class="page-1">
+				<div class="sound-btn"></div>
+				<video src="./assets/video/ptici_v_nebe_belie_ptici_v_sinem_nebe_staya_ptic_letayu_ie_ptici.mp4" muted loop
+					autoplay></video>
+				<h1>SoundBirdsQuiz</h1>
+			</div>
+			<div class="page-2">
+				<ul class="page-2_nav">
+					<li><span>Разминка</span></li>
+					<li><span>Воробьиные</span></li>
+					<li><span>Лесные птицы</span></li>
+					<li><span>Певчие птицы</span></li>
+					<li><span>Хищные птицы</span></li>
+					<li><span>Морские птицы</span></li>
+				</ul>
+				<div class="task-block">
+					<img class="foto-bird" src="./assets/svg/logo.svg" alt="bird">
+					<h2 class="name-bird">******</h2>
+					<audio class="audio" src="" controls></audio>
+				</div>
+				<div class="block-answer-describe">
+					<ul class="answer">
+						<li><span class="li-btn-1">Bird1</span></li>
+						<li><span class="li-btn-2">Bird2</span></li>
+						<li><span class="li-btn-3">Bird3</span></li>
+						<li><span class="li-btn-4">Bird4</span></li>
+						<li><span class="li-btn-5">Bird5</span></li>
+						<li><span class="li-btn-6">Bird6</span></li>
+					</ul>
+					<div class="describe-bird">
+						<img class="foto-bird" src="./assets/svg/logo.svg" alt="bird">
+						<h2 class="name-bird">nameBird</h2>
+						<p>Description Bird</p>
+						<audio class="audio" src="" controls></audio>
+					</div>
+				</div>
+				<div class="main-btn">next</div>
+			</div>
+
+			<div class="page-3">
+				<h2></h2>
+				<p></p>
+			</div>
+		</div>
+	</main>
 	<footer>
 		<div class="footer-item">
 			<p class='copyright'>&copy;</p>
@@ -35,7 +81,8 @@
 		</div>
 		<a class='rss-logo' href="https://rs.school/"></a>
 	</footer>
-	<script src="./index.js"></script>
+	<script src="./index.js" type="module"></script>
+	<script src="./birds.js" type="module"></script>
 </body>
 
 </html>
