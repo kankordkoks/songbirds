@@ -1,24 +1,23 @@
 header{
+  max-width: 1920px;
   width: 100%;
-  height: 100px;
+  height: 75px;
+  margin: auto;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-between; 
+  align-items: center; 
   flex-wrap: wrap;
   padding-left: 30px;
   padding-right: 30px;  
+  background-color: #554d4d;
 }
 .header-logo{
   width: 200px;  
   
 }
-.header-score{
-  width: 100px;  
-}
 
-.header-logo,
-.header-score{  
-  height: 100%;
+.header-logo{  
+  height: 50%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -34,16 +33,51 @@ header{
   filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);    
 }
 
-.logo:hover{
- 
+.logo:hover{ 
   position: relative;
   transform: scale(130%);
   transition: ease-in 0.3s;
 }
 
-nav{
-  flex-basis: 100%;
+.header-btn-block{
+  width: 250px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  column-gap: 15px;
 }
+.return-play{
+  width: 100px;
+  height: 60px;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border:2px solid rgb(255, 255, 0);
+  border-radius: 15px;
+  box-shadow: 2px 2px rgb(255, 255, 0);
+  cursor: pointer;
+}
+.score,
+.score-res{
+  opacity: 1;
+  transition: all ease-in 0.3s;
+}
+.score-res{
+  margin-right: 10px;
+}
+/* classes for help open/close element */
+
+.invisible{
+  opacity: 0;
+  transition: opacity ease-in 0.3s;
+  display: none;
+
+}
+/* ----------------------------------- */
+
+
+
 
 
 

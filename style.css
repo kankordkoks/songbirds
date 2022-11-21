@@ -1,5 +1,6 @@
 @import url(./css/normalize.css);
 @import url(./css/header.css);
+@import url(./css/main.css);
 @import url(./css/footer.css);
 
 body{
@@ -7,9 +8,6 @@ body{
   height: 100vh;
   display: flex;
   flex-direction: column;
-  font-family: 'Bungee Spice';
+  font-family: 'Bungee Spice', cursive;
 }
 
-main{
-  flex-grow: 1;
-}
